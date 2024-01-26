@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Welcome to the CV site for Rayna Weeden. Here you will find all of her photography, videos, music, and more!">
+  <meta name="author" content="Rayna R. Weeden">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/icon.jpg">
+
+  <title>Rayna Weeden</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Style Css -->
+  <link href="css/cv.css" rel="stylesheet">
+  <!-- Third-Pary Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://kit.fontawesome.com/ed299dde65.js" crossorigin="anonymous"></script>
+  <!-- Others  -->
+  <link href="css/animate.min.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-row">
+
+  <section class="col-12 w-100 d-flex flex-column">
+    <header>
+      <nav id="mobileNavBar" class="navbar navbar-expand-xl navbar-togglable" aria-label="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto mb-2" href="#">Rayna Weeden</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavBarCollapse"
+            aria-controls="mobileNavBarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="navbarTogglerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="mobileNavBarCollapse">
+            <ul class="navbar-nav ms-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('homePage')">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('aboutPage')">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('portfolioPage')">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('resumePage')">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('contactPage')">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="row w-100 d-flex align-items-start m-0">
+      <div class="col-12 h-100 w-100 p-0 mx-auto d-flex justify-content-center">
+
+        <!-- Home Page -->
+        <section id="homePage" class="h-100 w-100 active">
+          <div class="container h-100">
+            <div class="row h-100 d-flex align-items-center">
+              <div class="col-12 mx-auto d-flex justify-content-center">
+                <div class="d-block">
+                  <h1 class="animate__animated animate__fadeInUp animate__slow">Welcome To Me</h1>
+                  <nav class="navbar animate__animated animate__fadeInUp animate__slow">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                        <div class="underButtonWrapper">
+                          <div class="underButton"></div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="pageSwap('portfolioPage')">Portfolio</a>
+                        <div class="underButtonWrapper">
+                          <div class="underButton"></div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="pageSwap('resumePage')">Resume</a>
+                        <div class="underButtonWrapper">
+                          <div class="underButton"></div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="pageSwap('contactPage')">Contact</a>
+                        <div class="underButtonWrapper">
+                          <div class="underButton"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="aboutPage" class="h-100 w-100 unactive">
+          <div class="container h-100">
+            <div class="row h-100 d-flex align-items-start">
+              <div class="col-12 mx-auto d-flex justify-content-center">
+                <h4>Into the mind of Rayna</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio Page -->
+        <section id="portfolioPage" class="h-100 w-100 unactive">
+          <div class="container h-100">
+            <div class="col-12 mx-auto">
+              <div class="row mx-auto align-items-center justify-content-center">
+                <h2 class="text-center">Portfolio</h2>
+
+                <div class="tileDiv">
+                  <img class="tileImg mx-auto" src="img/projects/Pulcherrimum Quaerere (2024).PNG" alt="...">
+                  <a href="https://pulcherrimumquaerere.com/">
+                    <h3 class="tileTitle">Pulcherrimum Quaerere 2024</h3>
+                    <p class="tileDescription">This is a recreation of my Pulcherrimum Quaerere website from 2019 with a new theme. 
+                      I hope to update this more frequently with more than just poems.
+                    </p>
+                  </a>
+                </div>
+
+                <div class="tileDiv">
+                  <img class="tileImg mx-auto" src="img/projects/cv.PNG" alt="...">
+                  <a href="https://imagineskies.github.io/cv/">
+                    <h3 class="tileTitle">Resume/CV</h3>
+                    <p class="tileDescription">Website for my resume and to get to know more about me.</p>
+                  </a>
+                </div>
+
+                <div class="tileDiv">
+                  <img class="tileImg mx-auto" src="img/projects/pulcher.png" alt="...">
+                  <a href="https://pulcherrimumquaerere.xyz/">
+                    <h3 class="tileTitle">Pulcherrimum Quaerere 2019</h3>
+                    <p class="tileDescription">This was my main blog for the last few years. Though, 
+                      after coming back from a programming hiatus, I realize that my code is outdated, 
+                      inefficient, redundant in places, and overall I don't like the color palate. 
+                      Instead edit this one I'll archive the repo, make it public, redesign, and redevelop and new site.</p>
+                  </a>
+                </div>
+
+                <div class="tileDiv">
+                  <img class="tileImg mx-auto" src="img/projects/photography.png" alt="...">
+                  <a href="https://photos.imagineskiesmedia.com/">
+                    <h3 class="tileTitle">ImagineSkies Photos 2020</h3>
+                    <p class="tileDescription">This is the website for everything of mine 
+                      photography related. I'm working on shorting the url.</p>
+                  </a>
+                </div>
+
+                <div class="tileDiv">
+                  <img class="tileImg mx-auto" src="img/projects/aol.png" alt="...">
+                  <a href="https://imagineskies.github.io/An-Open-Letter/index.html">
+                    <h3 class="tileTitle">An Open Letter 2020</h3>
+                    <p class="tileDescription">This is a theme mockup I made for a friends personal project. 
+                      After writing the code and getting the UI perfect the plain is to implement this into 
+                      a WordPress Theme.</p>
+                  </a>
+                </div>
+                
+                <div class="tileDiv">
+                  <img class="tileImg mx-auto" src="img/projects/3.png" alt="...">
+                  <a href="https://usirnam3.wixsite.com/civilwarproject">
+                    <h3 class="tileTitle">Civil War Project 2016</h3>
+                    <p class="tileDescription">This is a website I made for a Civil War Project in 8th grade using Wix.</p>
+                  </a>
+                </div>
+
+                <div class="tileDiv">
+                  <img class="tileImg mx-auto" src="img/projects/2.png" alt="...">
+                  <a href="https://usirnam3.wixsite.com/anthrax">
+                    <h3 class="tileTitle">Human Diseases Research Project 2016</h3>
+                    <p class="tileDescription">This is a website I made for my Human Diseases Research Project in 8th grade.</p>
+                  </a>
+                </div>
+
+                <div class="tileDiv">
+                  <img class="tileImg mx-auto" src="img/projects/1.png" alt="...">
+                  <a href="https://imagineskies.tumblr.com/about">
+                    <h3 class="tileTitle">Tumblr About Page 2014</h3>
+                    <p class="tileDescription">I'm sad to say that my Tumblr has been deleted for being inactive for so long, 
+                      so the imagineskies url to the about page no longer works. However, I still like to keep this here for myself.
+                      This was the first website I made using my own HTML and CSS.
+                    </p>
+                  </a>
+                </div>
+                <div class="blankspace"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Resume Page -->
+        <section id="resumePage" class="h-100 w-100 unactive">
+          <div class="container h-100">
+            <div class="row h-100 d-flex align-items-start">
+
+              <!-- Title -->
+              <div class="col-lg-12 mx-auto">
+                <h2 style="font-weight: 600;" class=" text-center">Resume</h2>
+                <hr>
+              </div>
+              <!-- Education -->
+              <section id="resumeEducation" class="col-lg-8 me-auto">
+                <h3 class="resume title text-left">Education</h3>
+                <div>
+                  <h4 class="resume schoolName">Cass Technical High School</h4>
+                  <p class="resume startDateEndDate text-left">September 2016 - June 2017</p>
+                  <p class="resume description text-left">Completed 9th grade with a specialty in Graphic
+                    Communications.
+                  <p>
+                </div>
+                <div>
+                  <h3 class="resume schoolName text-left">SER YouthBuild Learning Academy</h3>
+                  <p class="resume startDateEndDate text-left">September 2018 - June 2020</p>
+                  <p class="resume description text-left">Completed 10th - 12th grade with a specialty in Web
+                    Development.
+                  <p>
+                </div>
+              </section>
+
+              <!-- Work Experience -->
+              <section id="resumeWork" class="col-lg-8 ms-auto">
+                <h3 class="resume title text-right">Work Experience</h3>
+                <div> <!-- SSA -->
+                  <h3 class="resume positionName text-right">Service Support Advisor</h3>
+                  <h3 class="resume random text-right text-right">
+                    <span class="resume companyName">Rivian</span>
+                    <span class="resume dot">&#8226;</span>
+                    <span class="resume employmentType">Full-Time</span>
+                  </h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume startDateEndDate">August 2022 - Present</span>
+                    <span class="resume lightDot">&#8226;</span>
+                    <span id="currentdurationOfEmployment" class="resume durationOfEmployment"></span>
+                  </h3>
+                  <p class="resume description text-right">I work as a middleman between the customers and service
+                    centers
+                    on the Second Shift. Handled consumer and fleet roadsides, created service tickets, service
+                    requests,
+                    and work orders, and scheduled appointments. I've learned processes for multiple subsections of our
+                    department to do this.</p>
+                  <p class="resume description text-right">On the Third Shift, I audit the work done by other shifts.
+                    Reviewing work orders and accounts one by one to make sure everything is in line with the process.
+                    Aligning our owners up for success.</p>
+                  <p class="resume description text-right">I've also taken on side projects during my time here. I
+                    learned
+                    multiple tools like PowerApps, Power Automate, SharePoint, Microsoft Lists, and
+                    TextExpander—building
+                    tools and functionality for our SharePoint and giving criticism where improvements could be found.
+                  </p>
+                  <p class="resume skills text-right">Skills: Automotive Service Writer · Customer Support · Remote
+                    Troubleshooting · Project Management</p>
+                </div>
+                <div>
+                  <h3 class="resume positionName text-right">Advanced Repair Agent</h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume companyName">Geek Squad</span>
+                    <span class="resume dot">&#8226;</span>
+                    <span class="resume employmentType">Full-Time</span>
+                  </h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume startDateEndDate">December 2021 - August 2022</span>
+                    <span class="resume lightDot">&#8226;</span>
+                    <span class="resume durationOfEmployment">9 mos</span>
+                  </h3>
+                  <p class="resume description text-right">As a Geek Squad Advanced Repair Agent, I created and
+                    maintained a
+                    supportive environment for customers by asking the right questions, listening carefully, taking
+                    detailed
+                    notes and partnering with other team members. Frequently diagnosing technology issues through
+                    various
+                    troubleshooting activities including the use of specialty software. Here I was responsible for the
+                    following tasks:</p>
+                  <ul class="list-group list-group-doted">
+                    <li class="resume text-right list-group-item">iPhone Repairs</li>
+                    <li class="resume text-right list-group-item">Apple Consignment & Shipping</li>
+                    <li class="resume text-right list-group-item">Computer Repair & Diagnostics</li>
+                    <li class="resume text-right list-group-item">Custom PC Builds</li>
+                    <li class="resume text-right list-group-item">Setup and Configuration of Windows and MacOS systems
+                    </li>
+                    <li class="resume text-right list-group-item">Taking detailed and concise notes regarding client
+                      machines</li>
+                    <li class="resume text-right list-group-item">Cross-store communication</li>
+                    <li class="resume text-right list-group-item">Data Management and File Transfers</li>
+                  </ul>
+                  <p class="resume skills text-right">Skills: Customer Support · Mobile Hardware Repair · Computer
+                    Repair · Software Troubleshooting · Data Management</p>
+                </div>
+                <div>
+                  <h3 class="resume positionName text-right">Retail Sales Associate</h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume companyName">Best Buy</span>
+                    <span class="resume dot">&#8226;</span>
+                    <span class="resume employmentType">Full-Time</span>
+                  </h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume startDateEndDate">August 2021 - December 2021</span>
+                    <span class="resume lightDot">&#8226;</span>
+                    <span class="resume durationOfEmployment">9 mos</span>
+                  </h3>
+                  <p class="resume description text-right">Within my first month was the highest ranking associate in
+                    sales,
+                    quickly working my way up from part time to full time. Here I was responsible for more of the store
+                    with
+                    tasks such as:</p>
+                  <ul class="list-group list-group-doted">
+                    <li class="resume text-right list-group-item">Training Seasonal Sales Associates</li>
+                    <li class="resume text-right list-group-item">Processing overrides</li>
+                    <li class="resume text-right list-group-item">Trained in closing the store down</li>
+                    <li class="resume text-right list-group-item">Assisting the Supervisors during rush hours</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="resume positionName text-right">Retail Sales Associate</h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume companyName">Best Buy</span>
+                    <span class="resume dot">&#8226;</span>
+                    <span class="resume employmentType">Part-Time</span>
+                  </h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume startDateEndDate">April 2021 - August 2021</span>
+                    <span class="resume lightDot">&#8226;</span>
+                    <span class="resume durationOfEmployment">9 mos</span>
+                  </h3>
+                  <p class="resume description text-right">As a Retail Sales Associate, I was trained with the skills
+                    and
+                    knowledge you needed to confidently recommend the right tech products and solutions for each
+                    customer.
+                    Here I learned:</p>
+                  <ul class="list-group list-group-doted">
+                    <li class="resume text-right list-group-item">Retail Sales</li>
+                    <li class="resume text-right list-group-item">Credit Cards Applications</li>
+                    <li class="resume text-right list-group-item">Mobile & Activations</li>
+                    <li class="resume text-right list-group-item">POS Returns</li>
+                    <li class="resume text-right list-group-item">How to explain technology to people with little or no
+                      previous knowledge.</li>
+                    <li class="resume text-right list-group-item">Honed interpersonal relationship skills to efficiently
+                      help every customer.</li>
+                  </ul>
+                  <p class="resume skills text-right">Skills: Customer Service Representatives · Retail Sales</p>
+                </div>
+                <div>
+                  <h3 class="resume positionName text-right">Sales Associate and Cashier</h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume companyName">Hot Topic</span>
+                    <span class="resume dot">&#8226;</span>
+                    <span class="resume employmentType">Part-Time</span>
+                  </h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume startDateEndDate">November 2019 - August 2021</span>
+                    <span class="resume lightDot">&#8226;</span>
+                    <span class="resume durationOfEmployment">1 yr 10 mos</span>
+                  </h3>
+                  <p class="resume description text-right">As a sales associate and cashier,
+                    I welcomed customers as they enter the store and help them while shopping.
+                    I also spent most of my shifts closing which includes cleaning the store,
+                    counting the registers, and preping for the opening shift.
+                  <p>
+                </div>
+                <div>
+                  <h3 class="resume positionName text-right">Sales Associate and Cashier</h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume companyName">Love Culture</span>
+                    <span class="resume dot">&#8226;</span>
+                    <span class="resume employmentType">Seasonal</span>
+                  </h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume startDateEndDate">November 2020 - December 2020</span>
+                    <span class="resume lightDot">&#8226;</span>
+                    <span class="resume durationOfEmployment">2 mos</span>
+                  </h3>
+                  <p class="resume description text-right">I worked as a seasonal sales associate until the closing
+                    of the store in Fairlane Mall. I would great customers as they entered, exited, and helped them
+                    shop for clothing. As well as sweep, mop, cleaning mirrors, taking out the trash, and ringing people
+                    out.
+                  <p>
+                </div>
+                <div>
+                  <h3 class="resume positionName text-right">Web Developer</h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume companyName">TinkerLabs</span>
+                    <span class="resume dot">&#8226;</span>
+                    <span class="resume employmentType">Internship</span>
+                  </h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume startDateEndDate">March 2019 - March 2020</span>
+                    <span class="resume lightDot">&#8226;</span>
+                    <span class="resume durationOfEmployment">1 yr</span>
+                  </h3>
+                  <p class="resume description text-right">I took a paid Internship at TinkerLabs building dynamic
+                    websites
+                    to work inside of a Magic Leap environment and using a combination of their API and WordPress to
+                    make a
+                    fully responsive website in the space of augmented reality.
+                  <p>
+                </div>
+                <div>
+                  <h3 class="resume positionName text-right">YCC Cafe Intern</h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume companyName">SER Metro Detroit</span>
+                    <span class="resume dot">&#8226;</span>
+                    <span class="resume employmentType">Internship</span>
+                  </h3>
+                  <h3 class="resume random text-right">
+                    <span class="resume startDateEndDate">March 2019 - April 2019</span>
+                    <span class="resume lightDot">&#8226;</span>
+                    <span class="resume durationOfEmployment">1 mos</span>
+                  </h3>
+                  <p class="resume description text-right">I ran the store, kept track of inventory, and managed money.
+                  <p>
+                </div>
+              </section>
+
+              <!-- Skills -->
+              <section id="resumeSkills" class="col-lg-6 me-auto">
+                <h3 class="resume title text-left">Specialties</h3>
+                <div class="resume random text-left">
+                  <p class="resume description text-left">Web Development/Design</p>
+                  <p class="resume description text-left">Project Management</p>
+                  <p class="resume description text-left">Retail Sales</p>
+                  <p class="resume description text-left">Automotive Service Writing</p>
+                  <p class="resume description text-left">Photography</p>
+                </div>
+                <h3 class="resume title text-left">Knowledge Base</h3>
+                <div class="resume random text-left">
+                  <p class="resume description text-left">HTML</p>
+                  <p class="resume description text-left">XML</p>
+                  <p class="resume description text-left">CSS</p>
+                  <p class="resume description text-left">JavaScript</p>
+                  <p class="resume description text-left">JSON</p>
+                  <p class="resume description text-left">PHP</p>
+                  <p class="resume description text-left">Linux</p>
+                  <p class="resume description text-left">Electronics Repair</p>
+                  <p class="resume description text-left">WordPress</p>
+                  <p class="resume description text-left">SharePoint</p>
+                  <p class="resume description text-left">Microsoft Power Platform</p>
+                </div>
+              </section>
+
+              <!-- Certifications -->
+              <section id="resumeCerts" class="col-lg-8 ms-auto">
+                <h4 class="resume title text-right">Certifications</h4>
+                <h5 class="resume subTitle text-right">Microsoft Technology Associate</h5>
+                <p class="resume description text-right">HTML5 Application Development Fundamentals</p>
+                <p class="resume description text-right">Introduction to Programming using HTML and CSS</p>
+                <p class="resume description text-right">Introduction to Programming using JavaScript</p>
+                <p class="resume description text-right">Microsoft Office Word 2016: Core Document Creation,
+                  Collaboration
+                  and
+                  Communication</p>
+                <h5 class="resume subTitle text-right">Others</h5>
+                <p class="resume description text-right">First Aid, CPR, and AED : Expired 2021</p>
+              </section>
+
+              <div class="blankspace"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contactPage" class="h-100 w-100 unactive">
+          <div class="container h-100">
+            <div class="row h-100 d-flex align-items-start">
+              <div class="col-12 mx-auto d-flex justify-content-center">
+                <h4>Into the mind of Rayna</h4>
+
+                
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+    </main>
+    <footer class="">
+
+    </footer>
+  </section>
+
+
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
