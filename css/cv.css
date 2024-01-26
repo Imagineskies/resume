@@ -205,10 +205,6 @@ main {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
-    animation: none;
-  }
-  #homePage nav {
-    animation: none;
   }
   #homePage .nav-item {
     font-size: 2.4rem;

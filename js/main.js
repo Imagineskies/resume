@@ -77,7 +77,7 @@ function exportCurrentPageViewed()  {
 
 function importCurrentPageViewed() {
   let data = sessionStorage.getItem('currentPageViewed');
-  if (data !== 'homePage') {
+  if (data !== 'homePage' && data !== null) {
     swapClass('homePage', "active", "unactive");
     swapClass(data, "unactive", "active");
     mobileMenuAllowed();
