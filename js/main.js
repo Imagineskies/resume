@@ -60,7 +60,6 @@ function checkActivePage() {
   }
 }
 
-
 function mobileMenuAllowed() {
   if (pageList[0].classList.contains("unactive") == true) {
     mobileNavBar.classList.add("shown");
@@ -73,30 +72,17 @@ function mobileMenuAllowed() {
 
 function exportCurrentPageViewed()  {
   var currentPageViewed = checkActivePage();
-  var scrollBarPosition = document.getElementById(currentPageViewed).scrollTop;
-  console.log(scrollBarPosition)
   sessionStorage.setItem('currentPageViewed', currentPageViewed);
-  sessionStorage.setItem('scrollBarPosition', scrollBarPosition);
-}
-
-function exportscrollBarPosition()  {
-  var scrollBarPosition = document.getElementById(currentPageViewed).scrollTop;
-  console.log(scrollBarPosition)
-  sessionStorage.setItem('scrollBarPosition', scrollBarPosition);
 }
 
 function importCurrentPageViewed() {
   let data = sessionStorage.getItem('currentPageViewed');
-  let dataPs = sessionStorage.getItem('scrollBarPosition');
-  console.log(dataPs);
   if (data !== 'homePage') {
     swapClass('homePage', "active", "unactive");
     swapClass(data, "unactive", "active");
-    document.getElementById(data).scrollTo({top: dataPs,behavior: "instant",});
     mobileMenuAllowed();
   }
 }
-
 
 function menuButton(page) {
   let activePage = checkActivePage();
@@ -124,12 +110,5 @@ function pageSwap(page) {
 ____________________________________________________________________________________
 Event Listeners
 ____________________________________________________________________________________
-
-
-currentPageViewed.addEventListener("scroll", (event) => {
-  console.log('Hello')
-  exportscrollBarPosition();
-});
-
 */
 

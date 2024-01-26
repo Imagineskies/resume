@@ -75,15 +75,13 @@ body, html {
   background: #555;
 }
 .blankspace {
-  margin-bottom: 5rem;
+  height: 5rem;
 }
 
 /*____________________________________________________________________________________*/
 /* Navigation */
 
 nav#mobileNavBar {
-  position: fixed;
-  animation-fill-mode: forwards;
   width: 100%;
   height: auto;
   padding: 15px;
@@ -104,7 +102,6 @@ nav#mobileNavBar a {
   height: 3em;
 }
 .navbar-toggler:focus {
-  border: none;
   box-shadow: none;
 }
 
@@ -220,6 +217,10 @@ main {
     visibility: hidden;
     display: none;
   }
+}
+
+#aboutPage {
+  overflow-y: scroll;
 }
 
 /* Resume Page */
