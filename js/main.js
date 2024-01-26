@@ -1,6 +1,6 @@
 'use strict';
 // Variable
-
+var currentPageViewed;
 
 // Declarations
 
@@ -13,7 +13,7 @@ const portfolioPage = document.getElementById('portfolioPage');
 const resumePage = document.getElementById('resumePage');
 const contactPage = document.getElementById('contactPage');
 const pageList = [homePage, aboutPage, portfolioPage, resumePage, contactPage];
-
+const mobileNavBar = document.getElementById('mobileNavBar');
 
 
 /*
@@ -54,16 +54,56 @@ function checkActivePage() {
   for (let i = 0; i < pageList.length; i++) {
     if (pageList[i].classList.contains("active") == true) {
       activePage =  pageList[i].id;
-      return activePage;
+      return currentPageViewed = activePage;
       break
     }
   }
 }
 
+
+function mobileMenuAllowed() {
+  if (pageList[0].classList.contains("unactive") == true) {
+    mobileNavBar.classList.add("shown");
+    mobileNavBar.classList.remove("hidden");
+  } else {
+    mobileNavBar.classList.add("hidden");
+    mobileNavBar.classList.remove("shown");
+  }
+}
+
+function exportCurrentPageViewed()  {
+  var currentPageViewed = checkActivePage();
+  var scrollBarPosition = document.getElementById(currentPageViewed).scrollTop;
+  console.log(scrollBarPosition)
+  sessionStorage.setItem('currentPageViewed', currentPageViewed);
+  sessionStorage.setItem('scrollBarPosition', scrollBarPosition);
+}
+
+function exportscrollBarPosition()  {
+  var scrollBarPosition = document.getElementById(currentPageViewed).scrollTop;
+  console.log(scrollBarPosition)
+  sessionStorage.setItem('scrollBarPosition', scrollBarPosition);
+}
+
+function importCurrentPageViewed() {
+  let data = sessionStorage.getItem('currentPageViewed');
+  let dataPs = sessionStorage.getItem('scrollBarPosition');
+  console.log(dataPs);
+  if (data !== 'homePage') {
+    swapClass('homePage', "active", "unactive");
+    swapClass(data, "unactive", "active");
+    document.getElementById(data).scrollTo({top: dataPs,behavior: "instant",});
+    mobileMenuAllowed();
+  }
+}
+
+
 function menuButton(page) {
   let activePage = checkActivePage();
   swapClass(activePage, "active", "unactive")
   swapClass(page, "unactive", "active")
+  mobileMenuAllowed();
+  exportCurrentPageViewed();
 }
 
 function pageSwap(page) {
@@ -76,36 +116,20 @@ function pageSwap(page) {
   setTimeout(() => {
     page.classList.remove('animate__animated', 'animate__fadeInUp');
   }, 2000);
+  mobileMenuAllowed();
+  exportCurrentPageViewed();
 }
-
-/*
-Fade page out
-hide page
-Fade in next page
-
-
-*/
 
 /*
 ____________________________________________________________________________________
 Event Listeners
 ____________________________________________________________________________________
-*/
 
-$(".sliding-link").click(function(e) {
-    e.preventDefault();
-    var aid = $(this).attr("href");
-    console.log(aid)
-    $('html,body').animate({scrollTop: $(aid).offset().top},1500);
+
+currentPageViewed.addEventListener("scroll", (event) => {
+  console.log('Hello')
+  exportscrollBarPosition();
 });
 
-$('#menuButton').click(function() {
-  var nav = document.getElementById('menuTemp');
-  if (nav.classList.contains(".menuColorBlack")) {
-    nav.classList.remove('menuColorBlack');
-    nav.classList.add('menuColorWhite');
-  } else {
-    nav.classList.add('menuColorBlack');
-    nav.classList.remove('menuColorWhite');
-  }
-})
+*/
+

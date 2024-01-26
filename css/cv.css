@@ -362,6 +362,12 @@ footer {
 
 /*____________________________________________________________________________________*/
 /* Global Text */
+
+svg{
+  display: inline-block;
+  width: 50px;
+} 
+
 .text-right {
   text-align: right !important;
 }
